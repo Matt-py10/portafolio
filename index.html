@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Mattius Holguin Blanco | Portafolio</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <!-- Encabezado mejorado -->
+        <div class="header">
+            <img src="image/foto.jpg" alt="Foto de Mattius Holguin" class="avatar">
+            <div>
+                <h1>Mattius Holguin Blanco</h1>
+                <h2>Programmer</h2>
+                <p>📍 Barranquilla / Colombia</p>
+            </div>
+        </div>
+
+
+        <button id="theme-button">Seleccionar Tema <span class="arrow">▼</span></button>
+            <div id="theme-dropdown" class="dropdown hidden">
+                <div class="color-box" style="background-color: #34e7ff;"></div>
+                <div class="color-box" style="background-color: #fc2104;"></div>
+                <div class="color-box" style="background-color: #fcf801;"></div>
+                <div class="color-box" style="background-color: #37fd62;"></div>
+                <div class="color-box" style="background-color: #c83dff;"></div>
+                <div class="color-box" style="background-color: #ff8c00;"></div>
+                <div class="color-box" style="background-color: hsl(0, 0%, 100%);"></div>
+            </div>
+
+            <button id="cv">Download CV</button>
+
+    </div>
+    <div class="divider"></div>
+    <main>
+        <section id="about">
+        <h2 data-i18n="about">Sobre mí</h2>
+        <p data-i18n="about-text"></p>
+
+
+        <section id="skills">
+        <h2 data-i18n="skills">Habilidades</h2>
+        <div class="skills-container">
+            <div class="skill"><i class="fab fa-html5"></i><h3>HTML</h3></div>
+            <div class="skill"><i class="fab fa-css3-alt"></i><h3>CSS</h3></div>
+            <div class="skill"><i class="fab fa-js-square"></i><h3>JavaScript</h3></div>
+            <div class="skill"><i class="fab fa-python"></i><h3>Python</h3></div>
+            <div class="skill"><i class="fas fa-database"></i><h3>MySQL</h3></div>
+            <div class="skill"><i class="fab fa-git-alt"></i><h3>Git</h3></div>
+            <div class="skill"><i class="fab fa-github-alt"></i><h3>GitHub</h3></div>
+        </div>
+        </section>
+
+        <section id="proyects">
+        <h2 data-i18n="featured-projects">Proyectos destacados</h2>
+
+        <div class="project-card">
+            <h3>📦 Inventory System</h3>
+            <p>This project is an inventory management system designed to track products, categories, and stock levels. It's perfect for local businesses looking to manage their resources efficiently.</p>
+            <iframe src="https://tuproyecto-inventario.vercel.app" width="100%" height="600" style="border: none; border-radius: 12px;"></iframe>
+            <div class="project-buttons">
+                <a href="https://tuproyecto-inventario.vercel.app" target="_blank" class="btn" data-i18n="view_full">View Full Project</a>
+                <a href="https://github.com/tuusuario/proyecto-inventario" target="_blank" class="btn ghost" data-i18n="source_code">Source Code</a>
+            </div>
+        </div>
+        
+        <div class="project-card">
+            <h3>📚 Reader Bookstore</h3>
+            <p>This was my first website! It is a digital bookstore project featuring books for readers of all interests. The website itself was built entirely with HTML, CSS, and JavaScript, showcasing my initial steps into web development.</p>
+            <iframe src="https://matt-py10.github.io/libreria_Matt_Reader/" width="100%" height="600" style="border: none; border-radius: 12px;"></iframe>
+            <div class="project-buttons">
+                <a href="https://matt-py10.github.io/libreria_Matt_Reader/" target="_blank" class="btn" data-i18n="view_full">View Full Project</a>
+                <a href="https://github.com/Matt-py10/libreria_Matt_Reader" target="_blank" class="btn ghost" data-i18n="source_code">Source Code</a>
+            </div>
+        </div>
+        
+
+        <div class="container-form">
+        <form id="form" action="https://formspree.io/f/meogjeyg" method="POST">
+            <h2 data-i18n="contact-form">Formulario de contacto</h2>
+            <label for="name" data-i18n="name-label">Nombre:</label>
+            <input type="text" id="name" name="nombre" />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"  />   
+            <label for="message" data-i18n="message-label">Mensaje:</label>
+            <textarea id="message" name="message"></textarea>
+            <button type="submit" data-i18n="send">Enviar</button>
+            <p id="error-message" style="color: rgb(245, 78, 78); display: none;"></p>
+            <p id="confirmation-message" style="color: rgb(20, 211, 20); display: none;"></p>
+        </form>
+        </div> 
+
+        <section id="contact">
+        <h2 data-i18n="contact">Contacto</h2>
+        <div class="footer-links">
+            <a href="https://www.instagram.com/matthx_10" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/573043345861" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://github.com/Matt-py10" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+        </section>
+
+        <div class="credits">
+        <p>&copy; 2025 Mattius Holguin Blanco. <span data-i18n="rights">Todos los derechos reservados.</span></p>
+        <p data-i18n="developed-by">Desarrollado por Mattius Holguin Blanco</p>
+        </div>
+    </main>
+
+
+
+    <script src="script.js" defer></script>
+</body>
+</html>
