@@ -358,22 +358,50 @@
   
   
   /* Responsive */
-  @media (max-width: 768px) {
-    .header {
+  /* Ajustes responsivos */
+@media (max-width: 768px) {
+  h1 {
+      font-size: 1.8rem; /* Reduce tamaño en pantallas pequeñas */
+      line-height: 1.2; /* Ajusta altura de línea para evitar cortes */
+      margin-bottom: 1rem;
+  }
+
+  h2 {
+      font-size: 1.5rem; /* Reduce subtítulo */
+      margin-bottom: 1rem;
+  }
+
+  .header {
       flex-direction: column;
       text-align: center;
-    }
-    
-    .skills-container {
-      grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-    }
-    
-    .project-buttons {
-      flex-direction: column;
       align-items: center;
-    }
-    
-    .project-card {
-      padding: 1rem;
-    }
+      gap: 1rem;
+      margin-bottom: 2rem; /* Reduce espaciado */
   }
+
+  .avatar {
+      width: 200px; /* Reduce avatar */
+      height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+      font-size: 1.5rem; /* Pequeñas pantallas */
+      line-height: 1.1;
+  }
+
+  h2 {
+      font-size: 1.2rem;
+  }
+
+  .header {
+      gap: 0.5rem; /* Menos separación vertical */
+  }
+
+  .avatar {
+      width: 150px; /* Avatar aún más pequeño */
+      height: 150px;
+  }
+}
+
