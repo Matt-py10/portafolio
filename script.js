@@ -37,14 +37,11 @@ form.addEventListener('submit', (event) => {
 // TRANSLATION CONTENT
 const i18n = {
     es: {
-        welcome: "¡Bienvenido!",
-        role: "Programador",
-        "nav-about": "Sobre mí",
-        "nav-skills": "Habilidades",
-        "nav-projects": "Proyectos",
-        "nav-contact": "Contacto",
+
+        Select_theme:"seleccionar Tema",
+        Download_CV:"descargar hoja de vida",
         about: "Sobre mí",
-        "about-text": "Soy un programador apasionado por la tecnología y el desarrollo de software...",
+        "about-text": "Soy un programador apasionado por la tecnología y el desarrollo de software. Disfruto aprender constantemente y enfrentar nuevos desafíos que me permitan crecer profesional y personalmente. Me considero una persona autodidacta, con una gran capacidad de adaptación y un fuerte sentido de la responsabilidad. Valoro el trabajo en equipo, la colaboración y siempre estoy dispuesto a ayudar a los demás. La programación no solo es mi profesión, sino también mi vocación, y estoy comprometido con seguir mejorando cada día.",
         skills: "Habilidades",
         "featured-projects": "Proyectos destacados",
         send: "Enviar",
@@ -58,6 +55,8 @@ const i18n = {
         source_code: "ver código fuente",
     },
     en: {
+        Select_theme:"Select Theme",
+        Download_CV:"Download CV",
         welcome: "Welcome!",
         role: "Programmer",
         "nav-about": "About me",
@@ -65,7 +64,7 @@ const i18n = {
         "nav-projects": "Projects",
         "nav-contact": "Contact",
         about: "About me",
-        "about-text": "I am a programmer passionate about technology and software development...",
+        "about-text": "I am a programmer passionate about technology and software development. I enjoy constantly learning and facing new challenges that allow me to grow both professionally and personally. I consider myself a self-taught person, with a great ability to adapt and a strong sense of responsibility. I value teamwork, collaboration, and I am always willing to help others. Programming is not only my profession but also my vocation, and I am committed to improving every day.",
         skills: "Skills",
         "featured-projects": "Featured Projects",
         send: "Send",
@@ -132,7 +131,7 @@ window.addEventListener("load", () => {
 
 // PDF LINK FUNCTIONALITY
 document.getElementById('cv').addEventListener('click', () => {
-    const pdfPath = './civilV/MattiusHolguinBlanco.pdf';
+    const pdfPath = './civilV/Mattius_Holguin_Blanco.pdf';
     fetch(pdfPath)
         .then((response) => {
             if (!response.ok) {
@@ -145,3 +144,4 @@ document.getElementById('cv').addEventListener('click', () => {
             console.error(error);
         });
 });
+
