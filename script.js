@@ -132,7 +132,7 @@ window.addEventListener("load", () => {
 
 // PDF LINK FUNCTIONALITY
 document.getElementById('cv').addEventListener('click', () => {
-    const pdfPath = './civilV/Mattius_Holguin_Blanco.pdf';
+    const pdfPath = './civilV/MattiusHolguinBlanco.pdf';
     fetch(pdfPath)
         .then((response) => {
             if (!response.ok) {
